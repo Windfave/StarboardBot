@@ -24,9 +24,9 @@ Any message that gets 2 and more star reactions gets sent as an embed into a #st
 If there is no said channel, the bot will create it. (Do not rename it.)
 
 The embed is constantly being updated (the reaction count) as long as the bot is turned on.
-If it is turned off and turned on again it won't have any memory of adding said message into the channel, and therefore won't update the reaction count there. It's possible it would add the message again if the message got two more reactions.
+If it is restarted (manually or via ratelimit) the bot loads data from before, so there shouldn't be any memory loss. It won't update any information about the reaction count during the time the bot is offline or restarting.
 
-If the message goes below 2  reactions, it gets removed from the #starboard.
+If the message goes below 2 reactions, it gets removed from the #starboard.
 
 ![example](https://cdn.discordapp.com/attachments/675325021937205268/1076848349732413551/image.png)
 ## Installation
